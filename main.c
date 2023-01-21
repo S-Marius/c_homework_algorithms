@@ -45,9 +45,9 @@ int compareArrays(int myNumbers[], int myNumbersRandom[], int size_t)
         for (i = 0; i < size_t; i++) {
             if (myNumbers[i] != myNumbersRandom[i]) {
                 stupidSort(myNumbers, myNumbersRandom, size_t);
+                tentativi = tentativi + 1;
                 i = -1;
             } else {
-                tentativi = tentativi + 1;
                 uguali = 1;
             }
         }
